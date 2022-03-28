@@ -2,21 +2,22 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta
     name="viewport"
     content="width=device-width, initial-scale=1.0"
-  >
+  />
   <title>Radio boxes</title>
-
 
   <link
     rel="stylesheet"
     href="https://pixellab.ro/js/pixeltab/static/js/pixeltab.css"
-  >
+  />
 </head>
 
 <body>
+  <label for="uliu">Uliu</label>
+  <label for="bufnita">Bufnita</label>
   <h1>Animalele mele preferate</h1>
   <form>
     <h3>Pasari</h3>
@@ -27,7 +28,7 @@
           name="pasari"
           id="uliu"
           value="Uliu"
-        >
+        />
         <label for="uliu">Uliu</label>
       </li>
       <li>
@@ -36,7 +37,7 @@
           name="pasari"
           id="bufnita"
           value="Bufnita"
-        >
+        />
         <label for="bufnita">Bufnita</label>
       </li>
       <li>
@@ -45,10 +46,52 @@
           name="pasari"
           id="lebada"
           value="Lebada"
-        >
+        />
         <label for="lebada">Lebada</label>
       </li>
     </ul>
+  </form>
+
+  <form>
+    <h3>Pesti</h3>
+
+    <ul>
+      <li>
+        <input
+          type="radio"
+          name="pesti"
+          id="pastrav"
+          value="pastrav"
+        />
+
+        <label for="pastrav">pastrav</label>
+      </li>
+
+      <li>
+        <input
+          type="radio"
+          name="pesti"
+          id="somon"
+          somon
+          value="somon"
+        />
+        <label for="somon">Somon</label>
+      </li>
+
+      <li>
+        <input
+          type="radio"
+          name="pesti"
+          id="ton"
+          value="ton"
+        />
+        <label for="ton">Ton</label>
+      </li>
+    </ul>
+    <button
+      type="submit"
+      title="Trimite"
+    >Trimite</button>
   </form>
 
   <div
