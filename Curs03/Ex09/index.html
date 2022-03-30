@@ -25,10 +25,44 @@
       rows="4"
       placeholder="Mesaj"
       required
-    ></textarea>
+    ></textarea><br>
+
+    <label for="name">Name *</label>
+    <input
+      type="text"
+      name="name"
+      id="name"
+      value="Nume"
+      placeholder="Nume"
+      minlength="5"
+      maxlength="30"
+      required
+    ><br>
+
+    <label for="surname">Surname *</label>
+    <input
+      type="text"
+      name="surname"
+      id="surname"
+      placeholder="Prenume"
+      minlength="5"
+      maxlength="30"
+      required
+    ><br>
+    <label for="details">Detalii *</label>
+    <textarea
+      name="details"
+      id="details"
+      cols="30"
+      rows="8"
+      placeholder="Detalii"
+    >Detalii</textarea><br>
+
+
 
     <button
       type="submit"
+      name="submit"
       title="Trimite"
     >Trimite</button>
   </form>
