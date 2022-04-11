@@ -26,53 +26,63 @@
   <header class="header">
     <section class="header-top">
       <section class="header-conect">
-        <p>
-          <a
-            href="/"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="youtube"
-          >
-            <i class="fa-brands fa-youtube"></i>
-          </a>
+        <ul class="social-media">
+          <li>
+            <a
+              href="/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="folow monochrome on social media"
+            >
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </li>
 
-          <a
-            href="/"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="twitter"
-          >
-            <i class="fa-brands fa-twitter"></i>
-          </a>
+          <li>
+            <a
+              href="/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="follow monochrome on social media"
+            >
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
 
-          <a
-            href="/"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="facebook"
-          >
-            <i class="fa-brands fa-facebook-f"></i>
-          </a>
+          <li>
+            <a
+              href="/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="follow monochrome on social media"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </li>
 
-          <a
-            href="/"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="instagram"
-          >
-            <i class="fa-brands fa-instagram-square"></i>
-          </a>
+          <li>
+            <a
+              href="/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="follow monochrome on social media"
+            >
+              <i class="fa-brands fa-instagram-square"></i>
+            </a>
+          </li>
 
-          <a
-            href="tel:+44(0)10 2345 6789"
-            title="phone number"
-          >Call Us +44(0)10 2345 6789</a>
-        </p>
+          <li>
+            <a
+              href="tel:+44(0)10 2345 6789"
+              title="phone number"
+            >Call Us +44(0)10 2345 6789</a>
+          </li>
+        </ul>
       </section>
       <!-- ./header-content -->
 
       <section class="header-controls">
-        <p>
+        <form class="header-newsletter">
           <i class="fa-solid fa-magnifying-glass"></i>
           <input
             type="search"
@@ -80,7 +90,13 @@
             id="search"
             placeholder="Search"
           >
-        </p>
+
+          <button
+            type="submit"
+            name="search"
+            id="search"
+          >Search</button>
+        </form>
 
         <ul>
           <li class="user-controls">
@@ -113,14 +129,14 @@
       </section>
       <!-- ./header-controls -->
 
-      <header class="header-top-inner">
+      <section class="header-title">
         <h1>MONO CHROME</h1>
-      </header>
-      <!-- ./header-top-inner -->
+      </section>
+      <!-- ./header-title -->
     </section>
     <!-- ./header-top -->
 
-    <header class="header-bottom">
+    <section class="header-bottom">
       <nav>
         <ul>
           <li>
@@ -162,8 +178,8 @@
         </ul>
       </nav>
 
-    </header>
-    <!-- ./header-bottom -->
+  </header>
+  <!-- ./header-bottom -->
   </header>
   <!-- ./header -->
 
@@ -175,7 +191,7 @@
   <footer class="footer">
     <section class="footer-contact">
       <ul>
-        <li>call us</li>
+        <li><span>call us</span></li>
 
         <li>
           <a
@@ -186,16 +202,16 @@
 
         <li>
           <a
-            href="mailto:ioan_bocos_93@yahoo.com"
-            title=""
+            href="mailto:abc@yahoo.com"
+            title="email"
           >email customer care</a>
         </li>
       </ul>
     </section>
     <!-- ./footer-contact -->
 
-    <section class="footer-container">
-      <ul>
+    <nav class="footer-nav">
+      <ul class="site-control">
         <li>
           <a
             href="/"
@@ -229,10 +245,9 @@
             returns</a>
         </li>
       </ul>
-    </section>
-    <!-- ./footer-container" -->
+    </nav>
 
-    <setion class="footer-aboutUs">
+    <nav class="footer-nav">
       <ul>
         <li>
           <a
@@ -262,30 +277,29 @@
           >advertising</a>
         </li>
       </ul>
-    </setion>
+    </nav>
     <!-- ./footer-aboutUs -->
 
-    <section class="footer-newsletter">
-      <ul>
-        <li>sign up for our newsletter</li> <br>
+    <section class="footer-connect">
+      <form class="footer-newsletter">
 
-        <li>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Your Email"
-          >
-        </li> <br>
+        <label for="newsletter">sign up for our newsletter</label><br>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Your Email"
+          required
+        >
 
-        <li>
-          <input
-            type="submit"
-            value="Submit"
-          >
-        </li>
+        <button
+          type="submit"
+          name="submit"
+          id="submit"
+        >submit</button>
+      </form>
 
-        <!-- aici nu am stiut daca sa le pun in paragraf sau li -->
+      <ul class="footer-social">
         <li>
           <a
             href="youtube.com"
@@ -295,7 +309,9 @@
           >
             <i class="fa-brands fa-youtube"></i>
           </a>
+        </li>
 
+        <li>
           <a
             href="twitter.com"
             target="_blank"
@@ -304,7 +320,9 @@
           >
             <i class="fa-brands fa-twitter"></i>
           </a>
+        </li>
 
+        <li>
           <a
             href="facebook.com"
             target="_blank"
@@ -313,7 +331,9 @@
           >
             <i class="fa-brands fa-facebook-f"></i>
           </a>
+        </li>
 
+        <li>
           <a
             href="instagram.com"
             target="_blank"
