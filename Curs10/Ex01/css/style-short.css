@@ -1,0 +1,12 @@
+/* insert code */
+
+.pane-short .short-para {
+  width: 65%;
+  border: 1px solid gold;
+  margin: 12px auto;
+  padding: 5px 8px;
+}
+
+.pane-short .list {
+  padding: 0 0 0 8px;
+}
