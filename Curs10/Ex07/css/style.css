@@ -1,0 +1,27 @@
+.my-first-list a {
+  display: block;
+  padding-left: 8px;
+}
+
+.my-first-list a::before {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background: purple;
+  content: '';
+  transform: rotate(45deg);
+  display: inline-block;
+  margin-right: 3px;
+  position: relative;
+  top: -2px;
+}
+
+.my-first-list a::after {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: red;
+  margin-left: 3px;
+}

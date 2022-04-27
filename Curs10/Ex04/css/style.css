@@ -1,1 +1,23 @@
+h2 + h3 {
+  text-decoration: underline dotted red;
+  margin-top: 8px;
+}
 
+ol ~ h3 {
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+ul > li > ul > li {
+  text-decoration: underline;
+}
+
+.my-list > li {
+  text-decoration: underline;
+  border: 1px solid green;
+}
+
+.nested ul > li > ul > li > a {
+  padding: 5px;
+  display: inline-block;
+}
