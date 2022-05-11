@@ -1,36 +1,9 @@
 @font-face {
   font-family: 'Roboto';
-  src: url('../fonts/Roboto-BlackItalic.woff2') format('woff2'),
-    url('../fonts/Roboto-BlackItalic.woff') format('woff');
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
-    url('../fonts/Roboto-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-BoldItalic.woff2') format('woff2'),
-    url('../fonts/Roboto-BoldItalic.woff') format('woff');
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-Italic.woff2') format('woff2'),
-    url('../fonts/Roboto-Italic.woff') format('woff');
+  src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+    url('../fonts/Roboto-Regular.woff') format('woff');
   font-weight: normal;
-  font-style: italic;
+  font-style: normal;
   font-display: swap;
 }
 
@@ -54,10 +27,10 @@
 
 @font-face {
   font-family: 'Roboto';
-  src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
-    url('../fonts/Roboto-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
+  src: url('../fonts/Roboto-BoldItalic.woff2') format('woff2'),
+    url('../fonts/Roboto-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
   font-display: swap;
 }
 
@@ -72,10 +45,10 @@
 
 @font-face {
   font-family: 'Roboto';
-  src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
-    url('../fonts/Roboto-Regular.woff') format('woff');
+  src: url('../fonts/Roboto-Italic.woff2') format('woff2'),
+    url('../fonts/Roboto-Italic.woff') format('woff');
   font-weight: normal;
-  font-style: normal;
+  font-style: italic;
   font-display: swap;
 }
 
@@ -89,11 +62,20 @@
 }
 
 @font-face {
-  font-family: 'Julius Sans One';
-  src: url('../fonts/JuliusSansOne-Regular.woff2') format('woff2'),
-    url('../fonts/JuliusSansOne-Regular.woff') format('woff');
-  font-weight: normal;
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
+    url('../fonts/Roboto-Medium.woff') format('woff');
+  font-weight: 500;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-BlackItalic.woff2') format('woff2'),
+    url('../fonts/Roboto-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
   font-display: swap;
 }
 
@@ -111,6 +93,15 @@
   src: url('../fonts/Roboto-Black.woff2') format('woff2'),
     url('../fonts/Roboto-Black.woff') format('woff');
   font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+    url('../fonts/Roboto-Bold.woff') format('woff');
+  font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
@@ -265,8 +256,8 @@ a {
   width: 100%;
   max-width: 1272px;
 }
-/* header */
 
+/* header */
 .header {
   margin-top: 40px;
   margin-bottom: 20px;
@@ -280,7 +271,7 @@ a {
   display: inline-block;
 }
 
-.header-connect li:first-child i {
+.header-connect li:first-child i[class*='fa-'] {
   color: #ff6b6b;
   font-size: 24px;
 }
@@ -295,10 +286,6 @@ a {
   float: right;
 }
 
-.header-controls li {
-  display: inline-block;
-}
-
 .header-controls ul {
   display: flex;
   align-items: center;
@@ -308,7 +295,7 @@ a {
 .header-controls .user-controls a {
   display: flex;
   align-items: center;
-  clear: both;
+  gap: 8px;
 }
 
 .header-controls .cart-controls {
@@ -342,7 +329,7 @@ a {
   clear: both;
 }
 
-.header-botton {
+.header-bottom {
   text-align: center;
 }
 
@@ -355,9 +342,10 @@ a {
 }
 
 .nav-primary li a {
-  display: inline-block;
+  display: inherit;
   padding: 8px 18px;
   text-transform: uppercase;
+  margin: 0 4px;
   font-size: 20px;
   font-weight: 300;
   border-radius: 24px;
@@ -375,12 +363,13 @@ a {
 }
 
 .nav-secondary li a {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   text-transform: uppercase;
-  padding: 4 4px;
+  padding: 4px 8px;
   transition: color 0.2s linear;
 }
+
 .nav-secondary li a:hover {
   color: #ff6b6b;
 }
@@ -412,24 +401,21 @@ a {
   margin-bottom: 6px;
 }
 
-.footer-suport {
+.footer-support {
   display: inline-block;
+  text-align: center;
 }
 
-.footer-suport li {
+.footer-support li {
   display: inline-block;
   margin-left: 16px;
 }
 
-.footer-suport li:first-child {
+.footer-support li:first-child {
   margin: 0;
 }
 
-.footer-suport a {
-  text-align: center;
-}
-
-.footer-suport i[class*='fa-'] {
+.footer-support i[class*='fa-'] {
   color: #ff6b6b;
   font-size: 24px;
   display: block;
@@ -439,11 +425,13 @@ a {
 .footer-contact {
   display: inline-block;
   margin-left: 24px;
+  text-transform: none;
 }
 
 .footer-contact h1 {
   font-size: 16px;
   text-transform: uppercase;
+  margin-bottom: 8px;
 }
 
 .footer-contact h1 span {
@@ -452,7 +440,6 @@ a {
 
 .footer-contact p {
   line-height: 18px;
-  text-transform: none;
 }
 
 .footer-contact p a:nth-of-type(2) {
@@ -468,26 +455,239 @@ a {
 
 .footer-bottom p {
   margin-bottom: 8px;
-  text-transform: uppercase;
-  margin-bottom: 8px;
 }
-
 /* end-footer */
 
 /* homepage */
+.content-header {
+  background: #1b1927 url('./../images/banners/banner-01.jpg') center center /
+    cover no-repeat;
+  height: 572px;
+  margin-bottom: 96px;
+}
+
+.banner-main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #fff;
+  height: inherit;
+  padding-left: 25px;
+}
+
+.banner-headings {
+  text-align: center;
+}
+
+.banner-headings h1 {
+  font-weight: bold;
+  font-size: 75px;
+}
+
+.banner-headings h2 {
+  font-weight: 300;
+  font-size: 42px;
+  margin: 16px 0 43px 0;
+}
+
+.banner-headings .banner-cta {
+  display: inline-block;
+  border: 1px solid #ff6b6b;
+  padding: 27px 40px;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #ff6b6b;
+  border-radius: 36px;
+  transition: color 0.2s linear, background-color 0.2s linear;
+}
+
+.banner-cta:hover {
+  color: #fff;
+  background-color: #ff6b6b;
+}
+
+.banner-copy {
+  position: absolute;
+  left: 25px;
+  bottom: 40px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.content-main > section {
+  margin-bottom: 96px;
+}
+
 .content-main > section > header {
   text-align: center;
 }
 
 .content-main > section > header > h1 {
   font-size: 30px;
-  text-align: center;
   color: #292929;
   font-weight: 300;
-  margin: 16px;
+  margin-bottom: 16px;
 }
 
 .content-main > section > header > h1 span {
   font-weight: 500;
 }
-/* end-hompage */
+
+.home-catalog-preview > header {
+  margin-bottom: 50px;
+}
+
+.product-tiles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-tile {
+  width: 27.34375%; /* 350 / 1280 * 100 */
+}
+
+.product-tile .product-tile-image {
+  position: relative;
+}
+
+.product-tile .product-tile-image img {
+  width: 100%;
+}
+
+.product-tile .product-tile-badge {
+  color: #ff6b6b;
+  font-size: 26px;
+  font-weight: 500;
+  top: 20px;
+  right: 20px;
+  position: absolute;
+}
+
+.product-tile .product-tile-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.product-tile .product-tile-title span:first-child {
+  color: #000;
+  font-weight: 500;
+}
+
+.product-tile .product-tile-title span:nth-child(2) {
+  font-weight: 500;
+}
+
+.product-tile .product-tile-subtitle {
+  text-align: center;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 300;
+}
+
+.product-tile .product-tile-pricing {
+  text-align: center;
+  margin: 16px 0;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.product-tile .product-tile-pricing .product-price-regular {
+  text-decoration: line-through;
+}
+
+.product-tile .product-tile-pricing .product-price {
+  font-size: 24px;
+}
+
+.product-tile .product-tile-pricing .product-price span {
+  color: #ff6b6b;
+  font-weight: 500;
+}
+
+.product-tile .product-tile-controls {
+  text-align: center;
+}
+
+.product-tile .product-tile-controls .product-tile-a2c {
+  border: 1px solid #ff6b6b;
+  text-transform: uppercase;
+  padding: 16px 32px;
+  border-radius: 32px;
+  background: none;
+  color: #ff6b6b;
+  font-family: 'Roboto' sans-serif;
+  cursor: pointer;
+  transition: color 0.2s linear, background-color 0.2s linear;
+}
+
+.product-tile .product-tile-controls .product-tile-a2c:hover {
+  color: #fff;
+  background-color: #ff6b6b;
+}
+
+.home-cta a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  height: 236px;
+  background: #0066b2 url('./../images/banners/banner-04.jpg') center center /
+    cover no-repeat;
+  color: #fff;
+  font-size: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-right: 50px;
+  text-align: right;
+}
+
+.home-cta a span:nth-of-type(1) {
+  margin-bottom: 16px;
+}
+
+/* prostie */
+.home-cta a > span:nth-child(even) {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.home-cta a > span:nth-child(even) span {
+  font-weight: 500;
+}
+
+.home-social ul {
+  margin-top: 33px;
+  text-align: center;
+}
+
+.home-social li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.home-social a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #5e5e5e;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  font-size: 32px;
+}
+
+.home-payment ul {
+  margin: 43px auto 0 auto;
+  width: 340px;
+  text-align: center;
+}
+
+.home-payment ul li {
+  display: inline-block;
+  margin: 5px;
+}
+/* end-homepage */
