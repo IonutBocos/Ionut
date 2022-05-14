@@ -164,18 +164,17 @@ a {
 .container {
   margin: 0 auto;
   width: 100%;
-  max-width: 1272px;
+  max-width: 1356px;
 }
 
 /* header */
 .header {
-  margin-top: 40px;
   margin-bottom: 20px;
 }
 
 .header-top {
-  background: black url('../poze/banner.png') center center / cover no-repeat;
-  width: 1920px;
+  background: black url('../pictures/banner.png') center center / cover
+    no-repeat;
   height: 500px;
   color: #aeaeae;
   font-size: 16px;
@@ -184,62 +183,102 @@ a {
   background-size: cover;
 }
 
-.header-top-inner {
-  margin-top: 43px;
-  margin-left: 421px;
-  margin-right: 421px;
-}
+/* banner nu arata asa bine da-mi te rog o idee */
 
 .header-connect {
   float: left;
+  margin-left: 136px;
+  margin-top: 40px;
 }
 
 .header-connect li {
   display: inline-block;
   margin-right: 30px;
-  margin-top: 43px;
   width: 23;
   height: 16px;
   color: #ffffff;
 }
 
 .header-controls {
+  display: flex;
   float: right;
+  margin-top: 40px;
+  margin-right: 140px;
+  height: 41px;
+  width: 435px;
+}
+
+.header-controls ul li {
+  display: inline-block;
+}
+
+.header-search i {
+  position: relative;
+  left: 25px;
+  top: 3px;
+}
+/* aici la search e placeholders sau button?  */
+
+.header-search ul li button {
+  position: relative;
+  right: 150px;
+  border: none;
+}
+
+.header-user-controls ul li {
+  margin-left: 42px;
+  width: 11px;
+  height: 11px;
 }
 
 .header-bottom {
   background-color: #2b2b2b;
-  width: 1920px;
   height: 52px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-header-bottom ul {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .nav-header-bottom li {
+  margin-top: 15px;
   display: inline-block;
-  align-items: center;
   width: 136px;
   height: 26px;
   letter-spacing: 0.28px;
   color: #e8e8e8;
   text-transform: uppercase;
-  margin-top: 15px;
-  margin-bottom: 11px;
 }
+
 /* header-end */
 
 /* footer */
-
 .footer-nav {
-  width: 1920px;
-  height: 249px;
   background-color: #e8e8e8;
 }
 
-.footer-nav {
+.footer-inner {
   display: flex;
+  justify-content: space-between;
+  height: 249px;
 }
-.footer-nav ul {
+
+.footer-inner ul {
   margin-top: 40px;
   margin-bottom: 53px;
+  font-weight: 500;
+}
+
+.footer-newsletter {
+  margin-top: 40px;
+}
+
+.footer-social ul li {
+  display: inline-flex;
 }
 
 .footer-nav ul li {
@@ -249,46 +288,109 @@ a {
   text-align: left;
 }
 
-.footer-contact ul {
-  width: 214px;
-  height: 156px;
-  margin-right: 176px;
-}
-.nav-footer-nav ul {
-  width: 217px;
-  height: 167px;
-  margin-right: 157px;
+.footer-contact ul :nth-child(4) {
+  text-decoration: underline;
 }
 
-.footer-contact {
-  display: inline-block;
-}
-
-.footer-connect {
-  margin-top: 40px;
-  margin-bottom: 53px;
-  margin-right: 40px;
-}
-
-.footer-connect li {
-  height: 30px;
-}
-
-.footer-newsletter {
-  width: 263px;
-}
-
-.footer-newsletter li {
-  margin-bottom: 15px;
-}
-
-.footer-social li {
-  display: inline-flex;
+.footer-social ul li {
   margin-right: 15px;
 }
 
 /* footer-end */
 
 /* body */
+.content-main > section > header {
+  margin-bottom: 23px;
+  margin-top: 50px;
+  text-align: center;
+}
+.content-main > section > header > h1 > span {
+  font-size: 35px;
+  color: #2b2b2b;
+  font-weight: 500px;
+}
+
+.product-tiles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-tile {
+  width: 23.67256%;
+}
+
+.product-tile .product-tile-image img {
+  width: 100%;
+}
+.product-tile h1 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.product-tile-pricing {
+  text-align: center;
+  margin: 16px 0;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.product-tile .product-title-favorite {
+  position: absolute;
+  margin-top: 22px;
+  margin-right: 18px;
+}
+
+.product-tiles-footer {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+.tiles-footer-loading {
+  border: 1px solid #2b2b2b;
+  width: 113px;
+  height: 49px;
+  letter-spacing: 0.88px;
+  font-size: 22px;
+  color: #2b2b2b;
+  background-color: #ffffff;
+}
+
+.home-content {
+  display: flex;
+  margin-top: 120px;
+}
+.aside-content img {
+  align-items: flex-start;
+  width: 666px;
+  height: 666px;
+}
+
+.home-content-section h2 {
+  width: 556px;
+  height: 59px;
+  font-size: 44px;
+  letter-spacing: 0.66px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.home-content-section {
+  margin-left: 139px;
+}
+
+.home-section-paragraph {
+  width: 551px;
+  height: 242px;
+  font-size: 22px;
+  letter-spacing: 0.33px;
+  color: #2b2b2b;
+  font: normal normal 300 22px/43px Roboto;
+  opacity: 1;
+  margin-bottom: 60px;
+  text-align: justify;
+}
 
 /* body-end */
