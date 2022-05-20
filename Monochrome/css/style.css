@@ -180,10 +180,8 @@ a {
   font-size: 16px;
   font-weight: 300;
   text-transform: uppercase;
-  background-size: cover;
+  width: 100%;
 }
-
-/* banner nu arata asa bine da-mi te rog o idee */
 
 .header-connect {
   float: left;
@@ -194,9 +192,20 @@ a {
 .header-connect li {
   display: inline-block;
   margin-right: 30px;
-  width: 23;
-  height: 16px;
+  width: 26;
+  height: 18px;
   color: #ffffff;
+}
+
+.header-connect li a {
+  transition: transform 0.2s;
+  width: 23px;
+  height: 16px;
+  margin: 0 auto;
+}
+
+.header-connect li a:hover {
+  transform: scale(1.5);
 }
 
 .header-controls {
@@ -204,8 +213,6 @@ a {
   float: right;
   margin-top: 40px;
   margin-right: 140px;
-  height: 41px;
-  width: 435px;
 }
 
 .header-controls ul li {
@@ -214,21 +221,37 @@ a {
 
 .header-search i {
   position: relative;
-  left: 25px;
-  top: 3px;
+  right: 45px;
+  top: 2px;
 }
-/* aici la search e placeholders sau button?  */
 
-.header-search ul li button {
+.header-search input {
+  background: none;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  padding-left: 25px;
+  border-color: #cccccc;
+}
+
+.header-search button {
   position: relative;
   right: 150px;
   border: none;
+  background: none;
 }
 
 .header-user-controls ul li {
   margin-left: 42px;
-  width: 11px;
-  height: 11px;
+}
+
+.header-user-controls li a {
+  transition: transform 0.2s;
+  width: 23px;
+  height: 16px;
+  margin: 0 auto;
+}
+
+.header-user-controls li a:hover {
+  transform: scale(1.5);
 }
 
 .header-bottom {
@@ -247,11 +270,24 @@ a {
 .nav-header-bottom li {
   margin-top: 15px;
   display: inline-block;
-  width: 136px;
   height: 26px;
   letter-spacing: 0.28px;
   color: #e8e8e8;
   text-transform: uppercase;
+}
+
+.nav-header-bottom li a {
+  padding: 8px 18px;
+  margin: 0 4px;
+  font-size: 20px;
+  font-weight: 300;
+  border-radius: 24px;
+  transition: color 0.2s linear, background-color 0.2s linear;
+}
+
+.nav-header-bottom li a:hover {
+  color: black;
+  background: #cccccc;
 }
 
 /* header-end */
@@ -292,18 +328,67 @@ a {
   text-decoration: underline;
 }
 
+.footer-contact li a {
+  padding: 1px 1px;
+  margin: 1 2px;
+  border-radius: 4px;
+  transition: color 0.2s linear, background-color 0.2s linear;
+}
+
+.footer-contact li a:hover {
+  text-decoration: underline;
+}
+
+.nav-footer-nav li a {
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-footer-nav li a:hover {
+  font-weight: bold;
+}
+
+.footer-nav li a {
+  transition: all 0.2s ease-in-out;
+}
+
+.footer-nav li a:hover {
+  font-weight: bold;
+}
+
 .footer-social ul li {
   margin-right: 15px;
+}
+
+.footer-newsletter input {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.footer-newsletter button {
+  text-transform: uppercase;
+}
+.footer-social li a {
+  transition: transform 0.2s;
+  width: 23px;
+  height: 16px;
+  margin: 0 auto;
+}
+
+.footer-social li a:hover {
+  transform: scale(1.5);
 }
 
 /* footer-end */
 
 /* body */
+
+.home-catalog-preview {
+  border-top: #e8e8e8 2px solid;
+}
 .content-main > section > header {
   margin-bottom: 23px;
-  margin-top: 50px;
   text-align: center;
 }
+
 .content-main > section > header > h1 > span {
   font-size: 35px;
   color: #2b2b2b;
@@ -313,6 +398,7 @@ a {
 .product-tiles {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 80px;
 }
 
 .product-tile {
@@ -322,11 +408,22 @@ a {
 .product-tile .product-tile-image img {
   width: 100%;
 }
+
 .product-tile h1 {
+  margin-top: 21px;
   text-align: center;
   font-size: 22px;
   font-weight: 600;
   text-transform: uppercase;
+}
+.product-tile-title a {
+  padding: 1px 1px;
+  border-radius: 6px;
+}
+
+.product-tile-title a:hover {
+  background-color: #2b2b2b;
+  color: #ffffff;
 }
 
 .product-tile-pricing {
@@ -336,10 +433,17 @@ a {
   font-weight: 300;
 }
 
+.product-tile-image {
+  position: relative;
+}
 .product-tile .product-title-favorite {
   position: absolute;
-  margin-top: 22px;
-  margin-right: 18px;
+  top: 21px;
+  right: 18px;
+}
+
+.product-title-favorite a:hover {
+  color: red;
 }
 
 .product-tiles-footer {
@@ -356,6 +460,10 @@ a {
   font-size: 22px;
   color: #2b2b2b;
   background-color: #ffffff;
+}
+
+.tiles-footer-loading a:hover {
+  text-decoration: underline;
 }
 
 .home-content {
