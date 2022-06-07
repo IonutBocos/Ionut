@@ -19,8 +19,11 @@
 }
 
 .box-brown {
+  transform: skew(10deg, 10deg) translate(-10px, -5px);
+}
+
+.box-brown {
   background-color: brown;
-  transform: skew(10deg, 10deg) translate(5px 10px);
 }
 
 .box-yellow {

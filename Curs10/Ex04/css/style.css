@@ -21,3 +21,48 @@ ul > li > ul > li {
   padding: 5px;
   display: inline-block;
 }
+
+p b {
+  color: purple;
+}
+
+ul i {
+  text-decoration: underline;
+}
+
+ul ~ p {
+  border: black dashed;
+
+  padding: 20px;
+}
+
+h1 + h2 {
+  color: green;
+}
+
+p i {
+  color: blue;
+}
+.u-line i {
+  text-decoration: underline;
+}
+
+h3 + p {
+  margin-top: 0px;
+}
+ul p {
+  border: black dashed;
+  padding: 20px;
+}
+
+ol + h2 {
+  text-decoration: underline;
+}
+
+.random ~ p {
+  padding: 10px 12px;
+}
+
+.last-list ~ ul a {
+  color: yellow;
+}

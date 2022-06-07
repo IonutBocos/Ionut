@@ -5,3 +5,99 @@
   overflow: hidden;
   padding: 12px 20px 6px 8px;
 }
+
+.pane-short .heading {
+  border-width: 1px;
+  border-style: dashed;
+  border-color: red;
+  padding: 5px 5px 5px 15px;
+}
+
+.pane-short .container {
+  border-width: 2px;
+  border-style: solid;
+  border-color: gray;
+  margin-top: 18px;
+  margin-right: 22px;
+  margin-bottom: 18px;
+  margin-left: 22px;
+  padding-top: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+}
+
+.pane-short .list li {
+  border-width: 2px;
+  border-style: dotted;
+  border-color: blueviolet;
+  margin-top: 2px;
+  margin-right: 25%;
+  margin-bottom: 8px;
+  margin-left: 15px;
+  padding-top: 3px;
+  padding-right: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+}
+
+.pane-short .para {
+  border-width: 1px;
+  border-style: dotted;
+  border-color: red;
+  padding-top: 3px;
+  padding-right: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+}
+
+.pane-short .short-para {
+  border: 1px;
+  border-style: solid;
+  border-color: wheat;
+  width: 50%;
+  margin-top: 15px;
+  margin-right: auto;
+  margin-bottom: 15px;
+  margin-left: auto;
+  padding-top: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+}
+
+.pane-short .container p {
+  border-width: 2px;
+  border-style: dashed;
+  border-color: brown;
+  padding-top: 5px;
+  padding-right: 2px;
+  padding-bottom: 5px;
+  padding-left: 2px;
+}
+
+.pane-short .anchor-list {
+  border-width: 1px;
+  border-style: solid;
+  border-color: royalblue;
+  overflow: hidden;
+  padding-top: 12px;
+  padding-right: 20px;
+  padding-bottom: 6px;
+  padding-left: 8px;
+}
+
+.pane-short .anchor-list li {
+  border-width: 1px;
+  border-style: dashed;
+  border-color: green;
+  float: left;
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}

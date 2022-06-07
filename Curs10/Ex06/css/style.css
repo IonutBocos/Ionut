@@ -7,3 +7,42 @@ p:hover i {
   top: -2px;
   left: -2px;
 }
+
+.main a:hover {
+  text-decoration: none;
+}
+
+.main li:nth-of-type(2n) a:hover {
+  color: red;
+}
+
+h1:hover {
+  text-decoration: underline;
+}
+
+p i {
+  position: relative;
+}
+
+p:hover i {
+  top: -2px;
+  right: 2px;
+}
+
+.secondary a:hover {
+  text-decoration: overline;
+}
+
+.main li:nth-of-type(2n + 1) a:hover {
+  text-decoration: none;
+  color: green;
+}
+
+p b {
+  position: relative;
+}
+
+p:hover b {
+  top: -2px;
+  color: red;
+}

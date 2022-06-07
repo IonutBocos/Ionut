@@ -10,3 +10,52 @@
 .pane-short .list {
   padding: 0 0 0 8px;
 }
+
+.pane-short .heading {
+  margin-top: 12px;
+  margin-right: 0;
+  margin-bottom: 12px;
+  margin-left: 5px;
+}
+
+.pane-short .container {
+  padding: 15px 8px 15px 4px;
+}
+
+.pane-short .para {
+  padding: 10px;
+}
+
+.pane-short .list {
+  padding: 0px 0px 0px 8px;
+}
+
+.pane-short .list li {
+  margin: 5px 0px 12px 5px;
+}
+
+.pane-long .short-para {
+  width: 65%;
+  border: 1px solid gold;
+  margin-top: 12px;
+  margin-right: auto;
+  margin-bottom: 12px;
+  margin-left: auto;
+  padding-top: 5px;
+  padding-right: 8px;
+  padding-bottom: 5px;
+  padding-left: 8px;
+}
+
+.pane-short .navigation {
+  margin: 10px 15px 10px 8px;
+}
+
+.pane-short .anchor-list {
+  margin: 5px;
+}
+
+.pane-short .anchor-list li {
+  display: inline-block;
+  margin: 0 10px;
+}
