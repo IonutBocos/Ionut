@@ -1,0 +1,117 @@
+.container {
+  width: 1440px;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+}
+
+body {
+  width: 100%;
+  background: hsl(225, 100%, 94%) url(../images/pattern-background-desktop.svg)
+    center / cover no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+.content-main {
+  background-color: white;
+  width: 410px;
+  height: auto;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.banner-profile {
+  width: 100%;
+  height: 200px;
+  background: url(./images/illustration-hero.svg) center/ cover no-repeat;
+}
+
+.order-description {
+  margin: 50px;
+  text-align: center;
+}
+
+.order-description h1 {
+  font-weight: bold;
+  color: hsl(223, 47%, 23%);
+  font-size: 24px;
+}
+
+.order-description p {
+  font-size: 16px;
+  color: gray;
+}
+
+.header h1 {
+  color: hsl(223, 47%, 23%);
+  text-align: center;
+}
+
+.plan-selector a:hover {
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+}
+
+.order-cost {
+  margin: 40px;
+  background-color: hsl(225, 100%, 98%);
+  height: 90px;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.annual-cost {
+  align-items: center;
+}
+
+.annual-cost > h3 {
+  color: hsl(223, 47%, 23%);
+  font-weight: bold;
+  margin: 0;
+  font-size: 16px;
+}
+
+.annual-cost :nth-child(2) {
+  color: gray;
+}
+
+.submit-button {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.proceed-payment {
+  width: 330px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  color: hsl(225, 100%, 98%);
+  background-color: hsl(245, 75%, 52%);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.proceed-payment:hover {
+  cursor: pointer;
+  background-color: blueviolet;
+}
+
+.cancel-order {
+  width: 330px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background: none;
+  font-weight: bold;
+  font-size: 16px;
+  color: gray;
+}
+
+.cancel-order:hover {
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+}
